@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-web-alpha
+  description: The place to be, for great tests
+  labels:
+    example.com/custom: custom_label_value
+  tags:
+    - ruby
+  links:
+    - url: https://admin.example.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: test-relations-team
+  system: public-websites
